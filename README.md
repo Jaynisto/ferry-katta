@@ -94,3 +94,8 @@ Then you can run your mocha test using the following command:
 ```command
 npm test
 ```
+
+
+### Status Badge
+
+[![Mocha With Typescript Tests](https://github.com/Jaynisto/ferry-katta/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/Jaynisto/ferry-katta/actions/workflows/npm-publish-github-packages.yml)
