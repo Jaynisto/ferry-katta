@@ -1,0 +1,41 @@
+{
+  "name": "ferry-katta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "car.js",
+  "scripts": {
+    "test": "ts-mocha test/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.10",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.2.2"
+  },
+  "nyc": {
+    "extends": "@istanbuljs/nyc-config-typescript",
+    "check-coverage": true,
+    "all": true,
+    "include": [
+        "src/**/!(*.test.*).[tj]s?(x)"
+    ],
+    "exclude": [
+        "src/_tests_/**/*.*"
+    ],
+    "reporter": [
+        "html",
+        "lcov",
+        "text",
+        "text-summary"
+    ],
+    "report-dir": "coverage"
+  }
+}
