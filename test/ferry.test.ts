@@ -1,6 +1,6 @@
 import { expect }  from 'chai';
-import { Car } from '../car';
-import { Ferry } from '../ferry';
+import { Car } from '../src/car';
+import { Ferry } from '../src/ferry';
 
 describe('Ferry Class Test', () => {
     it('should board a car and return "Accepted"', () => {

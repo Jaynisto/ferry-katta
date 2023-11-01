@@ -1,5 +1,5 @@
 import  assert  from 'assert'
-import sum from '../sum';
+import sum from '../src/sum';
 
 describe("Addition function.", () => {
     it("It should add two numbers!", () => {

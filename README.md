@@ -87,7 +87,7 @@ Add an entry to your ```package.json``` file to configure your mocha test writte
 
 ```javascript
 "scripts": {
-    "test": "ts-mocha test/*.ts"
+    "test": "ts-mocha -r ts-node/register test/**/*.spec.ts"
   }
 ```
 Then you can run your mocha test using the following command:

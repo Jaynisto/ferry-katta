@@ -1,4 +1,4 @@
-import { Car } from "./car";
+import { Car } from "../src/car";
 
 export class Ferry {
     private storedAmountOfCars : number;
@@ -13,7 +13,7 @@ export class Ferry {
     }
 
     board(car : Car):string {
-        if (this.carCount < this.storedAmountOfCars && this.peopleCount + car.getPassengerAmount <= this.amountOfPeople){
+        if (this.carCount < this.storedAmountOfCars && this.peopleCount + car.getPassengerAmount <= this.storedAmountOfPeople){
             this.carCount++;
             this.peopleCount += car.getPassengerAmount
             return "Accepted!"

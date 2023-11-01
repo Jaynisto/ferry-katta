@@ -1,5 +1,5 @@
 import { expect }  from 'chai';
-import { Car } from '../car'; // Replace 'your-code-file.js' with the actual file path.
+import { Car } from '../src/car'; // Replace 'your-code-file.js' with the actual file path.
 
 describe('Car Class Check.', () => {
     it('should return the car color', () => {
