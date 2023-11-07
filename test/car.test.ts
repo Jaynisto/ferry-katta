@@ -1,5 +1,5 @@
 import { expect }  from 'chai';
-import { Car } from '../src/car'; // Replace 'your-code-file.js' with the actual file path.
+import { Car } from '../src/car'; 
 
 describe('Car Class Check.', () => {
     it('should return the car color', () => {
@@ -14,14 +14,9 @@ describe('Car Class Check.', () => {
     
     it('should calculate discounts correctly', () => {
         const myCar = new Car("Green", 6);
-        // Test for no discount
         expect(myCar.checkDiscount()).to.equal(""); 
-    
-        // Test for half price after 3 trips
         myCar.trip = 3;
-        expect(myCar.checkDiscount()).to.equal("Half Price!"); 
-    
-        // Test for going free after 7 trips
+        expect(myCar.checkDiscount()).to.equal("Half Price!");
         myCar.trip = 7;
         expect(myCar.checkDiscount()).to.equal("You Go Free!"); 
     });
