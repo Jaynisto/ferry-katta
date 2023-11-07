@@ -7,7 +7,7 @@ describe('Ferry Class Test', () => {
         const myCar = new Car("Red", 4)
         const myFerry = new Ferry(5, 3);
         const result  = myFerry.board(myCar)
-      expect(result).to.equal("Rejected!"); // Use expect
+      expect(result).to.equal("Rejected!");
     });
   
     it('should reject boarding when full', () => {
@@ -16,6 +16,6 @@ describe('Ferry Class Test', () => {
       const car2 = new Car("Blue", 1);
       myFerry.board(car1);
       const result = myFerry.board(car2);
-      expect(result).to.equal("Rejected!"); // Use expect
+      expect(result).to.equal("Rejected!"); 
     });
 });
